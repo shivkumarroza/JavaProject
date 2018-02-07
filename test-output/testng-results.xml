@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[TestA]]>
+    </line>
+    <line>
+      <![CDATA[TestB]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="40843" started-at="2018-02-07T18:37:51Z" finished-at="2018-02-07T18:38:32Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="40843" started-at="2018-02-07T18:37:51Z" finished-at="2018-02-07T18:38:32Z">
+      <class name="script.Demo">
+        <test-method status="PASS" signature="openApplication()[pri:0, instance:script.Demo@17d677df]" name="openApplication" is-config="true" duration-ms="24010" started-at="2018-02-08T00:07:52Z" finished-at="2018-02-08T00:08:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method status="PASS" signature="testA()[pri:0, instance:script.Demo@17d677df]" name="testA" duration-ms="6" started-at="2018-02-08T00:08:16Z" finished-at="2018-02-08T00:08:16Z">
+          <reporter-output>
+            <line>
+              <![CDATA[TestA]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testA -->
+        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.Demo@17d677df]" name="closeApplication" is-config="true" duration-ms="1859" started-at="2018-02-08T00:08:16Z" finished-at="2018-02-08T00:08:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testA status=SUCCESS method=Demo.testA()[pri:0, instance:script.Demo@17d677df] output=TestA]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method status="PASS" signature="openApplication()[pri:0, instance:script.Demo@17d677df]" name="openApplication" is-config="true" duration-ms="11379" started-at="2018-02-08T00:08:17Z" finished-at="2018-02-08T00:08:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method status="PASS" signature="testB()[pri:0, instance:script.Demo@17d677df]" name="testB" duration-ms="2" started-at="2018-02-08T00:08:29Z" finished-at="2018-02-08T00:08:29Z">
+          <reporter-output>
+            <line>
+              <![CDATA[TestB]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testB -->
+        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.Demo@17d677df]" name="closeApplication" is-config="true" duration-ms="3543" started-at="2018-02-08T00:08:29Z" finished-at="2018-02-08T00:08:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testB status=SUCCESS method=Demo.testB()[pri:0, instance:script.Demo@17d677df] output=TestB]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- script.Demo -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
