@@ -2,6 +2,8 @@ package generic;
 
 import java.util.concurrent.TimeUnit;
 
+import org.apache.http.config.SocketConfig;
+import org.apache.http.impl.SocketHttpClientConnection;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestResult;
