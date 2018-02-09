@@ -21,7 +21,7 @@ public abstract class BaseTest implements IAutoConst{
 	@BeforeMethod
 	public void openApplication()
 	{
-		driver=new FirefoxDriver();
+		driver=new ChromeDriver();
 		String appURL=AutoUtil.getProperty(CONFIG_PATH, "appURL");
 		driver.get(appURL);
 		String sITO=AutoUtil.getProperty(CONFIG_PATH, "ITO");

@@ -17,9 +17,27 @@ public class CheckProductVersion extends BaseTest {
 		l.clickLogin();
 		l.verifyPageIsDisplayed(driver, Excel.getData(XL_PATH, "CheckProductVersion", 1, 3));
 		EnterTTPage et = new EnterTTPage(driver);
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		et.clickHelp();
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		et.clickAboutActiTIME();
 		et.verifyVersion(Excel.getData(XL_PATH, "CheckProductVersion", 1, 4));
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		et.clickCloseButton();
 		et.clickLogout();
 		
