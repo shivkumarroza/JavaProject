@@ -28,4 +28,16 @@ public class BasePage {
 			String aText=e.getText();
 			Assert.assertEquals(aText, eText);
 		}
+		
+		public void waitTillElementisVisible(WebDriver driver,WebElement element) {
+			String sETO=AutoUtil.getProperty(IAutoConst.CONFIG_PATH, "ETO");
+			long ETO=Long.parseLong(sETO);
+			WebDriverWait wait=new WebDriverWait(driver, ETO);
+			try {
+				wait.until(ExpectedConditions.visibilityOf(element));
+			}catch(Exception e)
+			{
+				
+			}
+		}
 }

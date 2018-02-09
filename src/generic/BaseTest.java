@@ -2,10 +2,9 @@ package generic;
 
 import java.util.concurrent.TimeUnit;
 
-import org.apache.http.config.SocketConfig;
-import org.apache.http.impl.SocketHttpClientConnection;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -22,7 +21,7 @@ public abstract class BaseTest implements IAutoConst{
 	@BeforeMethod
 	public void openApplication()
 	{
-		driver=new ChromeDriver();
+		driver=new FirefoxDriver();
 		String appURL=AutoUtil.getProperty(CONFIG_PATH, "appURL");
 		driver.get(appURL);
 		String sITO=AutoUtil.getProperty(CONFIG_PATH, "ITO");
