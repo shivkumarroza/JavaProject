@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Chrome(failed)">
+    <parameter name="ip" value="10.0.0.7"/>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="script.ValidLogin">
+        <methods>
+          <include name="testValidLogin"/>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- script.ValidLogin -->
+      <class name="script.CheckProductVersion">
+        <methods>
+          <include name="testProductVersion"/>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- script.CheckProductVersion -->
+      <class name="script.InvalidLogin">
+        <methods>
+          <include name="testInvalidLogin"/>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- script.InvalidLogin -->
+    </classes>
+  </test> <!-- Chrome(failed) -->
+  <test name="FireFox(failed)">
+    <parameter name="ip" value="10.0.0.7"/>
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="script.ValidLogin">
+        <methods>
+          <include name="testValidLogin"/>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- script.ValidLogin -->
+      <class name="script.CheckProductVersion">
+        <methods>
+          <include name="testProductVersion"/>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- script.CheckProductVersion -->
+      <class name="script.InvalidLogin">
+        <methods>
+          <include name="testInvalidLogin"/>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- script.InvalidLogin -->
+    </classes>
+  </test> <!-- FireFox(failed) -->
+</suite> <!-- Failed suite [Suite] -->

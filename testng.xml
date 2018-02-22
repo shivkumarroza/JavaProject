@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test thread-count="5" name="Test">
-    <classes>
-      <class name="script.ValidLogin"/>
-      <class name="script.CheckProductVersion"/>
-      <class name="script.InvalidLogin"/>
-    </classes>
+<suite name="Suite" parallel="tests">
+  <test name="Chrome">
+  <parameter name="ip" value="10.0.0.7"></parameter>
+  <parameter name="browser" value="chrome"></parameter>
+    <packages>
+    <package name="script"/>
+    </packages>
+  </test> <!-- Test -->
+  <test name="FireFox">
+  <parameter name="ip" value="10.0.0.7"></parameter>
+  <parameter name="browser" value="firefox"></parameter>
+    <packages>
+    <package name="script"/>
+    </packages>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
