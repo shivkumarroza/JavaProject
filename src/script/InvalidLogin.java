@@ -21,6 +21,7 @@ public class InvalidLogin extends BaseTest {
 		//click on Login Button
 		l.clickLogin();
 		//verify that Home Page is Displayed
+		l.waitTillErrMsgDisplayed(driver);
 		l.verifyErrMsg(msg);
 	}
 

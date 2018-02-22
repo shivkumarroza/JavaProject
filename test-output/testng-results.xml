@@ -1,44 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
-    <line>
-      <![CDATA[PASS: Expected Page is diplayed]]>
-    </line>
-    <line>
-      <![CDATA[PASS: Expected Page is diplayed]]>
-    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13406" started-at="2018-02-09T01:07:56Z" finished-at="2018-02-09T01:08:09Z">
+  <suite name="Default suite" duration-ms="17699" started-at="2018-02-22T18:01:19Z" finished-at="2018-02-22T18:01:37Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13406" started-at="2018-02-09T01:07:56Z" finished-at="2018-02-09T01:08:09Z">
-      <class name="script.CheckProductVersion">
-        <test-method status="PASS" signature="openApplication()[pri:0, instance:script.CheckProductVersion@17d677df]" name="openApplication" is-config="true" duration-ms="6201" started-at="2018-02-09T06:37:56Z" finished-at="2018-02-09T06:38:02Z">
+    <test name="Default test" duration-ms="17699" started-at="2018-02-22T18:01:19Z" finished-at="2018-02-22T18:01:37Z">
+      <class name="script.InvalidLogin">
+        <test-method status="PASS" signature="openApplication()[pri:0, instance:script.InvalidLogin@7b69c6ba]" name="openApplication" is-config="true" duration-ms="12617" started-at="2018-02-22T23:31:19Z" finished-at="2018-02-22T23:31:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method status="PASS" signature="testProductVersion()[pri:0, instance:script.CheckProductVersion@17d677df]" name="testProductVersion" duration-ms="6912" started-at="2018-02-09T06:38:02Z" finished-at="2018-02-09T06:38:09Z">
+        <test-method status="PASS" signature="testInvalidLogin()[pri:2, instance:script.InvalidLogin@7b69c6ba]" name="testInvalidLogin" duration-ms="2527" started-at="2018-02-22T23:31:32Z" finished-at="2018-02-22T23:31:34Z">
           <reporter-output>
-            <line>
-              <![CDATA[PASS: Expected Page is diplayed]]>
-            </line>
-            <line>
-              <![CDATA[PASS: Expected Page is diplayed]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- testProductVersion -->
-        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.CheckProductVersion@17d677df]" name="closeApplication" is-config="true" duration-ms="258" started-at="2018-02-09T06:38:09Z" finished-at="2018-02-09T06:38:09Z">
+        </test-method> <!-- testInvalidLogin -->
+        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.InvalidLogin@7b69c6ba]" name="closeApplication" is-config="true" duration-ms="2529" started-at="2018-02-22T23:31:34Z" finished-at="2018-02-22T23:31:37Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testProductVersion status=SUCCESS method=CheckProductVersion.testProductVersion()[pri:0, instance:script.CheckProductVersion@17d677df] output=PASS: Expected Page is diplayed]]]>
+                <![CDATA[[TestResult name=testInvalidLogin status=SUCCESS method=InvalidLogin.testInvalidLogin()[pri:2, instance:script.InvalidLogin@7b69c6ba] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-      </class> <!-- script.CheckProductVersion -->
+      </class> <!-- script.InvalidLogin -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
